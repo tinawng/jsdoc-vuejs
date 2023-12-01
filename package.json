@@ -10,6 +10,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js index.js config.js lib __tests__ cypress",
+    "prettier": "prettier --ignore-path .gitignore --write \"./**/*.{js,cjs,vue,css,postcss}\"",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -36,8 +37,8 @@
     "ejs": "^3.0.1"
   },
   "peerDependencies": {
-    "jsdoc": ">=3.0.0",
-    "@vue/compiler-sfc": ">= 3.0.0"
+    "jsdoc": "3.6.11",
+    "@vue/compiler-sfc": "3.3.9"
   },
   "devDependencies": {
     "@kocal/semantic-release-preset": "^2.0.6",
