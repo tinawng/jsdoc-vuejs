@@ -6,7 +6,7 @@
 
 <script setup>
   /**
-   * @module test/CounterSetup
+   * @module
    * @vue-prop {Number} [initialCounter=1] - Counter default value
    * @vue-slot #header This is a header slot
    */
