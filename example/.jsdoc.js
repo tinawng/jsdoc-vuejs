@@ -1,18 +1,10 @@
 module.exports = {
-  plugins: [
-    '../',
-    'plugins/markdown',
-  ],
+  plugins: ["../", "plugins/markdown"],
   source: {
-    include: [
-      'src/',
-      'src/better-components',
-      'src/js',
-      'README.md',
-    ],
-    includePattern: '\\.(vue|js)$',
+    include: ["src/", "src/better-components", "src/js", "README.md"],
+    includePattern: "\\.(vue|js)$",
   },
   opts: {
-    encoding: 'utf8',
+    encoding: "utf8",
   },
-};
+}

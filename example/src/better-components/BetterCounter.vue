@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex';
+  import { mapState } from "vuex"
 
   /**
    * @module better-components/BetterCounter
@@ -24,38 +24,38 @@
    */
   export default {
     props: {
-      initialCounter: {type: Number, required: true},
-      step: {type: Number, default: 1}
+      initialCounter: { type: Number, required: true },
+      step: { type: Number, default: 1 },
     },
     data() {
       return {
-        counter: this.initialCounter
+        counter: this.initialCounter,
       }
     },
     computed: {
       ...mapState({
         fooList: state => state.$_foo.fooList,
-        barList: state => state.$_foo.barList
+        barList: state => state.$_foo.barList,
       }),
       message() {
         return `Counter: ${this.counter}`
-      }
+      },
     },
     methods: {
       /**
        * Increment counter and emit event 'increment'
        */
       increment() {
-        this.counter += this.step;
-        this.$emit('increment', this.counter);
+        this.counter += this.step
+        this.$emit("increment", this.counter)
       },
 
       /**
        * Decrement counter and emit event 'decrement'
        */
       decrement() {
-        this.counter -= this.step;
-        this.$emit('decrement', this.counter);
+        this.counter -= this.step
+        this.$emit("decrement", this.counter)
       },
 
       /**
@@ -63,18 +63,18 @@
        * @param {Number} counter - Counter value
        */
       showDialog(counter) {
-        alert(`Counter value is ${counter}.`);
-      }
+        alert(`Counter value is ${counter}.`)
+      },
     },
 
     /**
      * Counter.vue `created` hook.
      */
     created() {
-      console.info('Counter.vue: created()');
+      console.info("Counter.vue: created()")
     },
     mounted() {
-      console.info('Counter.vue: mounted()');
-    }
-  };
+      console.info("Counter.vue: mounted()")
+    },
+  }
 </script>

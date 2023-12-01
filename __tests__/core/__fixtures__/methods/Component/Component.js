@@ -1,10 +1,9 @@
-
 /**
  * @vue-prop {String} test - test description
  * @vue-data {String} [foo=bar] - Foo description
  */
-export default ({
-  name: 'component',
+export default {
+  name: "component",
   props: {
     test: {
       type: String,
@@ -12,9 +11,9 @@ export default ({
   },
   data() {
     return {
-      foo: 'bar',
-    };
+      foo: "bar",
+    }
   },
   methods: {},
   computed: {},
-});
+}

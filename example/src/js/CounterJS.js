@@ -1,4 +1,4 @@
-import { mapState } from 'vuex';
+import { mapState } from "vuex"
 
 /**
  * @module CounterJS
@@ -10,7 +10,7 @@ import { mapState } from 'vuex';
  * @vue-computed {String} message A message
  */
 export default {
-  name: 'CounterJS',
+  name: "CounterJS",
   props: {
     initialCounter: { type: Number, required: true },
     step: { type: Number, default: 1 },
@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       counter: this.initialCounter,
-    };
+    }
   },
   computed: {
     ...mapState({
@@ -26,7 +26,7 @@ export default {
       barList: state => state.$_foo.barList,
     }),
     message() {
-      return `Counter: ${this.counter}`;
+      return `Counter: ${this.counter}`
     },
   },
   methods: {
@@ -34,14 +34,14 @@ export default {
      * Increment counter.
      */
     increment() {
-      this.counter += this.step;
+      this.counter += this.step
     },
 
     /**
      * Decrement counter.
      */
     decrement() {
-      this.counter -= this.step;
+      this.counter -= this.step
     },
 
     /**
@@ -49,7 +49,7 @@ export default {
      * @param {Number} counter - Counter value
      */
     showDialog(counter) {
-      alert(`Counter value is ${counter}.`);
+      alert(`Counter value is ${counter}.`)
     },
   },
 
@@ -57,9 +57,9 @@ export default {
    * Counter.vue `created` hook.
    */
   created() {
-    console.info('Counter.vue: created()');
+    console.info("Counter.vue: created()")
   },
   mounted() {
-    console.info('Counter.vue: mounted()');
+    console.info("Counter.vue: mounted()")
   },
-};
+}

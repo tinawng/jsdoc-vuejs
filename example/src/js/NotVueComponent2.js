@@ -3,12 +3,12 @@
  */
 module.exports = {
   state: {
-    foo: 'bar',
+    foo: "bar",
   },
   /**
    * @param {String} i
    */
   theMethod(i) {
-    console.log(i);
+    console.log(i)
   },
-};
+}

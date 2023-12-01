@@ -1,6 +1,6 @@
-const config = Object.assign({}, require('./.jsdoc'));
+const config = Object.assign({}, require("./.jsdoc"))
 
-config.opts.destination = 'docs-minami';
-config.opts.template = './node_modules/minami';
+config.opts.destination = "docs-minami"
+config.opts.template = "./node_modules/minami"
 
-module.exports = config;
+module.exports = config

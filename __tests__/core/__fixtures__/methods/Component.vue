@@ -3,18 +3,18 @@
 </template>
 
 <script>
-/**
- * My component
- */
-export default {
-  name: 'Component',
-  methods: {
-    /**
-     * Show a dialog
-     */
-    showDialog() {
-      // ...
-    }
+  /**
+   * My component
+   */
+  export default {
+    name: "Component",
+    methods: {
+      /**
+       * Show a dialog
+       */
+      showDialog() {
+        // ...
+      },
+    },
   }
-};
 </script>
